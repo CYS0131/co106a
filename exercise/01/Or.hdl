@@ -17,5 +17,6 @@ CHIP Or {
     // Put your code here:
     Not(in=a, out=out1);
     Not(in=b, out=out2);
-    Nand(a=out1, b=out2, out=out);
+    And(a=nota, b=notb, out=and);
+    Not(in=and, out=out);
 }
